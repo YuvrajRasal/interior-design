@@ -1,0 +1,94 @@
+/* INTERNO */
+.h-interno > a {
+  width: 28% !important;
+}
+
+@media (max-width: 700px) {
+  .h-interno {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 8% auto;
+    padding: 3% 0;
+    background-color: #292f36;
+    border-radius: 50px;
+    color: white;
+  }
+
+  .h-interno > h1 {
+    color: white;
+    margin: 0;
+  }
+
+  .h-interno > a {
+    width: 24%;
+  }
+
+  .h-interno > a > button {
+    color: white;
+    width: 100%;
+    margin: 3% 0%;
+    padding: 8% 0%;
+    border-radius: 15px;
+    border: none;
+    background-color: #cda274;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .h-interno {
+    width: 70%;
+    padding: 20px 12px !important;
+    background-color: #2264ae;
+    border-radius: 40px !important;
+  }
+
+  .h-interno > h1 {
+    color: white;
+    margin: 0;
+    font-size: 22px !important;
+  }
+  .h-interno > a {
+    width: 44% !important;
+  }
+}
+
+.h-interno {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 8% auto;
+  padding: 3% 0;
+  background-color: #292f36;
+  border-radius: 50px;
+  color: white;
+}
+
+.h-interno > h1 {
+  color: white;
+  margin: 0;
+}
+
+.h-interno > a {
+  width: 24%;
+}
+
+.h-interno > a > button {
+  color: white;
+  width: 100%;
+  margin: 3% 0%;
+  padding: 8% 0%;
+  border-radius: 15px;
+  border: none;
+  background-color: #cda274;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,105 @@
+/* Main Header Styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-logo-text {
+  display: flex;
+  align-items: center;
+  font-family: "DM Serif Display";
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.header-logo img {
+  width: 20px;
+  height: auto;
+}
+.header-logo {
+  display: flex;
+  width: 8%;
+  align-items: center;
+  margin-right: 4px;
+}
+
+.header-text p {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.header-pages {
+  display: flex;
+}
+
+.header-pages ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-pages ul li {
+  margin-right: 20px;
+}
+
+.header-pages ul li a {
+  text-decoration: none;
+  font-family: Jost;
+  font-size: 16px;
+  color: #333;
+  /* color: rgba(0, 0, 0, 0.2); */
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  font-family: Jost;
+  font-weight: 400;
+}
+
+/* Responsive Styles */
+@media (max-width: 650px) {
+  .hamburger {
+    display: block; /* Show hamburger */
+  }
+
+  .header-pages {
+    display: none; /* Hide menu by default */
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(181, 175, 175, 0.1);
+    flex-direction: column;
+    z-index: 1000;
+  }
+
+  .header-pages.active {
+    display: flex; /* Show menu when active */
+  }
+
+  .header-pages ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .header-pages ul li {
+    margin: 10px 0; /* Add spacing between menu items */
+  }
+
+  .header-pages ul li a {
+    font-size: 18px; /* Adjust font size */
+  }
+}
